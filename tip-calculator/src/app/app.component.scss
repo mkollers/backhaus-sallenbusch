@@ -1,0 +1,21 @@
+:host {
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+main {
+  flex-direction: column;
+  display: flex;
+  flex: 1 1 250px;
+  box-sizing: border-box;
+  max-width: 250px;
+  min-width: 250px;
+}
+
+#logo {
+  margin-bottom: 30px;
+}
