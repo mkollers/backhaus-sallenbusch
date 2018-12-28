@@ -1,11 +1,17 @@
-<main>
+<form id="main">
   <img id="logo" src="/assets/logo.gif" width="250" height="250" alt="Backhaus Sallenbusch Logo">
   <mat-form-field appearance="outline">
     <mat-label>Summe Gruppe 1</mat-label>
-    <input matInput formControlName="group1" required>
+    <input type="number" matInput formControlName="group1" required>
   </mat-form-field>
   <mat-form-field appearance="outline">
     <mat-label>Auslagen 9998 Trinkgeld</mat-label>
-    <input matInput formControlName="expenses" required>
+    <input type="number" matInput formControlName="expenses" required>
   </mat-form-field>
-</main>
+  <dl id="result">
+    <dt>Bar Umsatzabrechnung</dt>
+    <dd>0,00€</dd>
+    <dt>Trinkgeldabgabe</dt>
+    <dd>0,00€</dd>
+  </dl>
+</form>
