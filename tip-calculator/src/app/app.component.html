@@ -1,4 +1,4 @@
-<form id="main">
+<form id="main" [formGroup]="fg">
   <img id="logo" src="/assets/logo.gif" width="250" height="250" alt="Backhaus Sallenbusch Logo">
   <mat-form-field appearance="outline">
     <mat-label>Summe Gruppe 1</mat-label>
@@ -10,8 +10,8 @@
   </mat-form-field>
   <dl id="result">
     <dt>Bar Umsatzabrechnung</dt>
-    <dd>0,00€</dd>
+    <dd>{{ salesBilling$ | async | currency:'EUR':'symbol' }}</dd>
     <dt>Trinkgeldabgabe</dt>
-    <dd>0,00€</dd>
+    <dd>{{ gratuityCharge$ | async | currency:'EUR':'symbol'}}</dd>
   </dl>
 </form>

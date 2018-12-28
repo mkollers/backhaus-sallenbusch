@@ -1,11 +1,17 @@
-import { NgModule } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localeDe from '@angular/common/locales/de';
+import localeDeExtra from '@angular/common/locales/extra/de';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+
+registerLocaleData(localeDe, 'de', localeDeExtra);
 
 @NgModule({
   declarations: [
@@ -15,12 +21,15 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    ReactiveFormsModule,
 
     // Material
     MatButtonModule,
     MatInputModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'de' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
