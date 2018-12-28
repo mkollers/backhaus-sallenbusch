@@ -17,8 +17,8 @@ export class AppComponent {
     fb: FormBuilder
   ) {
     this.fg = fb.group({
-      group1: fb.control(0, [Validators.required, Validators.min(0)]),
-      expenses: fb.control(0, [Validators.required, Validators.min(0)])
+      group1: fb.control(0.00, [Validators.required, Validators.min(0)]),
+      expenses: fb.control(0.00, [Validators.required, Validators.min(0)])
     });
 
     this.salesBilling$ = this.fg.valueChanges.pipe(
