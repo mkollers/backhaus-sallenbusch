@@ -10,6 +10,10 @@ const routes: Routes = [
         path: 'imprint',
         loadChildren: './pages/imprint-page/imprint-page.module#ImprintPageModule'
     },
+    {
+        path: 'privacy',
+        loadChildren: './pages/privacy-page/privacy-page.module#PrivacyPageModule'
+    },
     { path: '**', redirectTo: '' }
 ];
 
