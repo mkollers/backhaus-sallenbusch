@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TextMaskModule } from 'angular2-text-mask';
 
 import { AppComponent } from './app.component';
 
@@ -22,6 +23,8 @@ registerLocaleData(localeDe, 'de', localeDeExtra);
     BrowserAnimationsModule,
     FlexLayoutModule,
     ReactiveFormsModule,
+
+    TextMaskModule,
 
     // Material
     MatButtonModule,
