@@ -18,7 +18,8 @@ export class CalculatorPageComponent {
   numberMask = createNumberMask({
     decimalSymbol: ',',
     thousandsSeparatorSymbol: '.',
-    allowDecimal: true
+    allowDecimal: true,
+    prefix: ''
   });
 
   constructor(
