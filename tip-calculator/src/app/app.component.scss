@@ -1,0 +1,35 @@
+main {
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1 1 100%;
+  place-content: center;
+  align-items: center;
+  min-height: calc(100% - 64px);
+}
+
+@media (max-width: 599px) {
+  main {
+    min-height: calc(100% - 56px);
+  }
+}
+
+:host ::ng-deep router-outlet + * {
+  display: block;
+  overflow: auto;
+  max-width: 250px;
+  min-width: 250px;
+}
+
+#logo {
+  margin: 30px 0;
+}
+
+.mat-toolbar {
+  background: #313539;
+  border-top: 1px solid #4b4c4d;
+}
+
+.mat-button {
+  font-weight: 300;
+}

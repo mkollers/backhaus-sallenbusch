@@ -1,54 +1,37 @@
-:host {
-    flex-direction: row;
-    box-sizing: border-box;
-    display: flex;
-    place-content: center;
-    align-items: center;
-    padding: 30px;
-  }
-  
-  #main {
-    flex-direction: column;
-    display: flex;
-    flex: 1 1 250px;
-    box-sizing: border-box;
-    max-width: 250px;
-    min-width: 250px;
-  }
-  
-  #logo {
-    margin-bottom: 30px;
-  }
-  
-  dl {
-    width: 100%;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    font-size: 13px;
-  }
-  
-  dt {
-    float: left;
-    width: 60%;
-    padding: 0;
-    margin: 0
-  }
-  
-  dd {
-    float: left;
-    width: 40%;
-    padding: 0;
-    margin: 0;
-    text-align: right;
-  }
-  
-  input {
-    text-align: right;
-  }
-  
-  :host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-prefix,
-  :host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-suffix {
-    top: 0;
-  }
-  
+#main {
+  flex-direction: column;
+  display: flex;
+  box-sizing: border-box;
+}
+
+dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+
+dt {
+  float: left;
+  width: 60%;
+  padding: 0;
+  margin: 0
+}
+
+dd {
+  float: left;
+  width: 40%;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+input {
+  text-align: right;
+}
+
+:host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-prefix,
+:host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-suffix {
+  top: 0;
+}
