@@ -1,0 +1,19 @@
+<form id="main" [formGroup]="fg">
+  <img id="logo" src="/assets/logo.gif" width="250" height="250" alt="Backhaus Sallenbusch Logo">
+  <mat-form-field appearance="fill">
+    <mat-label>Summe Gruppe 1</mat-label>
+    <input [textMask]="{mask: numberMask}" matInput formControlName="group1" required>
+    <span matSuffix>&nbsp;€</span>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Auslagen 9998 Trinkgeld</mat-label>
+    <input [textMask]="{mask: numberMask}" matInput formControlName="expenses" required>
+    <span matSuffix>&nbsp;€</span>
+  </mat-form-field>
+  <dl id="result">
+    <dt>Bar Umsatzabrechnung</dt>
+    <dd>{{ salesBilling$ | async | currency:'EUR':'symbol' }}</dd>
+    <dt>Trinkgeldabgabe</dt>
+    <dd>{{ gratuityCharge$ | async | currency:'EUR':'symbol'}}</dd>
+  </dl>
+</form>
