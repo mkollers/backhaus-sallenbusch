@@ -8,11 +8,77 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
+$mat-backhaus-red: (
+  50 : #f6e5e6,
+  100 : #eabec1,
+  200 : #dc9397,
+  300 : #cd686d,
+  400 : #c3474e,
+  500 : #b8272f,
+  600 : #b1232a,
+  700 : #a81d23,
+  800 : #a0171d,
+  900 : #910e12,
+  A100 : #ffc1c2,
+  A200 : #ff8e91,
+  A400 : #ff5b5f,
+  A700 : #ff4146,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #ffffff,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #ffffff,
+  )
+);
+
+$mat-backhaus-yellow: (
+  50 : #fffee0,
+  100 : #fffcb3,
+  200 : #fffa80,
+  300 : #fff84d,
+  400 : #fff726,
+  500 : #fff500,
+  600 : #fff400,
+  700 : #fff200,
+  800 : #fff000,
+  900 : #ffee00,
+  A100 : #ffffff,
+  A200 : #fffef2,
+  A400 : #fffabf,
+  A700 : #fff8a6,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #000000,
+      500 : #000000,
+      600 : #000000,
+      700 : #000000,
+      800 : #000000,
+      900 : #000000,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+  )
+);
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$tip-calculator-primary: mat-palette($mat-indigo);
-$tip-calculator-accent: mat-palette($mat-pink, A200, A100, A400);
+$tip-calculator-primary: mat-palette($mat-backhaus-red);
+$tip-calculator-accent: mat-palette($mat-backhaus-yellow);
 
 // The warn palette is optional (defaults to red).
 $tip-calculator-warn: mat-palette($mat-red);
