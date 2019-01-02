@@ -31,8 +31,3 @@ dd {
 input {
   text-align: right;
 }
-
-:host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-prefix,
-:host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-suffix {
-  top: 0;
-}

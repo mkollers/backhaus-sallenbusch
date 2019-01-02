@@ -1,12 +1,14 @@
 <form id="main" [formGroup]="fg">
   <mat-form-field color="accent" appearance="fill">
     <mat-label>Summe Gruppe 1</mat-label>
-    <input [textMask]="{mask: numberMask}" matInput formControlName="group1" required>
+    <input [textMask]="{mask: numberMask}" matInput formControlName="group1" required pattern="\d{1,3}(?:\.\d{3})*(?:,\d+)" (click)="$event.target.select()"
+      autocomplete="off">
     <span matSuffix>&nbsp;€</span>
   </mat-form-field>
   <mat-form-field color="accent" appearance="fill">
     <mat-label>Auslagen 9998 Trinkgeld</mat-label>
-    <input [textMask]="{mask: numberMask}" matInput formControlName="expenses" required>
+    <input [textMask]="{mask: numberMask}" matInput formControlName="expenses" required pattern="\d*" pattern="\d{1,3}(?:\.\d{3})*(?:,\d+)" (click)="$event.target.select()"
+      autocomplete="off">
     <span matSuffix>&nbsp;€</span>
   </mat-form-field>
   <dl id="result">
