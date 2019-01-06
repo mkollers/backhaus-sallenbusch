@@ -1,13 +1,13 @@
 <form id="main" [formGroup]="fg" novalidate>
   <mat-form-field color="accent" appearance="fill">
     <mat-label>Summe Gruppe 1</mat-label>
-    <input [textMask]="{mask: numberMask}" matInput formControlName="group1" required inputmode="numeric" (click)="$event.target.select()"
+    <input [textMask]="{mask: numberMask}" matInput formControlName="group1" required inputmode="numeric" (focus)="select($event)"
       autocomplete="off">
     <span matSuffix>&nbsp;€</span>
   </mat-form-field>
   <mat-form-field color="accent" appearance="fill">
     <mat-label>Auslagen 9998 Trinkgeld</mat-label>
-    <input [textMask]="{mask: numberMask}" matInput formControlName="expenses" required inputmode="numeric" (click)="$event.target.select()"
+    <input [textMask]="{mask: numberMask}" matInput formControlName="expenses" required inputmode="numeric" (focus)="select($event)"
       autocomplete="off">
     <span matSuffix>&nbsp;€</span>
   </mat-form-field>
