@@ -63,8 +63,9 @@ export class CalculatorPageComponent {
 
   select($event) {
     $event.target.select();
-    $event.target.selectionStart = 0;
-    $event.target.selectionEnd = 999;
+    setTimeout(() => { // Safari hack
+      $event.target.select();
+    }, 0);
   }
 
 }
